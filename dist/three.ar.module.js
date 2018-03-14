@@ -1381,7 +1381,6 @@ var ARVideoRenderer = function () {
         }
         gl.enableVertexAttribArray(_this.textureCoordAttribute);
         gl.vertexAttribPointer(_this.textureCoordAttribute, _this.textureCoordBuffer.itemSize, gl.FLOAT, false, 0, 0);
-        gl.activeTexture(gl.TEXTURE0);
         gl.bindTexture(_this.textureTarget, _this.texture);
         gl.texImage2D(_this.textureTarget, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, _this.passThroughCamera);
         gl.uniform1i(_this.samplerUniform, 0);
@@ -1602,6 +1601,7 @@ if (typeof window !== 'undefined' && _typeof(window.THREE) === 'object') {
   window.THREE.ARUtils = ARUtils;
   window.THREE.ARView = ARView;
   window.THREE.ARAnchorManager = ARAnchorManager;
+  window.THREE.ARPlanes = ARPlanes;
 }
 
-export { ARDebug, ARPerspectiveCamera, ARReticle, ARUtils, ARView, ARAnchorManager };
+export { ARDebug, ARPerspectiveCamera, ARReticle, ARUtils, ARView, ARAnchorManager, ARPlanes };
