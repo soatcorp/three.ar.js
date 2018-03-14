@@ -313,7 +313,7 @@ class ARVideoRenderer {
         0
       );
 
-      gl.activeTexture(gl.TEXTURE0);
+      // gl.activeTexture(gl.TEXTURE0);
       gl.bindTexture(this.textureTarget, this.texture);
       // Update the content of the texture in every frame.
       gl.texImage2D(
