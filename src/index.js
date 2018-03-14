@@ -20,6 +20,7 @@ import ARReticle from './ARReticle';
 import ARUtils from './ARUtils';
 import ARView from './ARView';
 import ARAnchorManager from './ARAnchorManager';
+import ARPlanes from './ARPlanes';
 import './ARSpeechRecognition';
 
 // If including three.ar.js as a standalone script tag,
@@ -32,6 +33,7 @@ if (typeof window !== 'undefined' && typeof window.THREE === 'object') {
   window.THREE.ARUtils = ARUtils;
   window.THREE.ARView = ARView;
   window.THREE.ARAnchorManager = ARAnchorManager;
+  window.THREE.ARPlanes = ARPlanes;
 }
 
 export {
@@ -41,4 +43,5 @@ export {
   ARUtils,
   ARView,
   ARAnchorManager,
+  ARPlanes,
 };
